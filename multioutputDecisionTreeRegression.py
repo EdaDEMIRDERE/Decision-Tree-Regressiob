@@ -30,3 +30,15 @@ plt.scatter(y[:, 0], y[:, 1], c="navy", s=25, edgecolors="black", label="data")
 plt.scatter(y_d2[:, 0], y_d2[:, 1], c="cornflowerblue", s=25, edgecolors="black", label="d2")
 plt.scatter(y_d5[:, 0], y_d5[:, 1], c="red", s=25, edgecolors="black", label="d5")
 plt.scatter(y_d8[:, 0], y_d8[:, 1], c="orange", s=25, edgecolors="black", label="d8")
+
+# sınırları belirler
+plt.xlim([-6, 6])
+plt.ylim([-6, 6])
+# eksene isim verir
+plt.xlabel("target 1")
+plt.ylabel("target 2")
+# grafiğe başlık koyar
+plt.title("Multi-output Decision Tree Regression")
+# dataları açıklar
+plt.legend(loc="best")
+plt.show()
