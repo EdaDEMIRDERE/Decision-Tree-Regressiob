@@ -21,3 +21,12 @@ X_test = np.arange(-100.0, 100.0, 0.01)[:, np.newaxis]
 y_d2 = regr_d2.predict(X_test)
 y_d5 = regr_d5.predict(X_test)
 y_d8 = regr_d8.predict(X_test)
+
+plt.figure()
+# c : noktaların rengini belirler
+# s : noktaların boyutunu belirler
+# edgecolor : noktaların kenar rengini belirler
+plt.scatter(y[:, 0], y[:, 1], c="navy", s=25, edgecolors="black", label="data")
+plt.scatter(y_d2[:, 0], y_d2[:, 1], c="cornflowerblue", s=25, edgecolors="black", label="d2")
+plt.scatter(y_d5[:, 0], y_d5[:, 1], c="red", s=25, edgecolors="black", label="d5")
+plt.scatter(y_d8[:, 0], y_d8[:, 1], c="orange", s=25, edgecolors="black", label="d8")
