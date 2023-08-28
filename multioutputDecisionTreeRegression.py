@@ -15,3 +15,9 @@ regr_d8 = DecisionTreeRegressor(max_depth=8)
 regr_d2.fit(X, y)
 regr_d5.fit(X, y)
 regr_d8.fit(X, y)
+
+# Predict
+X_test = np.arange(-100.0, 100.0, 0.01)[:, np.newaxis]
+y_d2 = regr_d2.predict(X_test)
+y_d5 = regr_d5.predict(X_test)
+y_d8 = regr_d8.predict(X_test)
